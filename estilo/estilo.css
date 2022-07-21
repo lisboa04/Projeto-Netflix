@@ -1,0 +1,134 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --vermelho: #E50914;
+    --cinza: #141414;
+}
+body{
+    background-color: var(--cinza)  ;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+header .container{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+header .logo{
+    color: var(--vermelho);
+    font-family: Arial;
+    font-size: 27px;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+header nav a:hover{
+    transition: 1s;
+    color: #fff;
+}
+/* Sessão filme-destaque */
+.filme-destaque{
+    width: 100%;
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://lisboa04.github.io/Projeto-Netflix/img/filme-destaque.png');
+    height: 90vh;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.filme-destaque .container{
+    width: 50%;
+}
+.titulo-sinopse{
+    margin-top: 5%;
+}
+.titulo-sinopse h3{
+    font-size: 30px;
+}
+.titulo-sinopse p{
+    text-align: justify;
+    margin-top: 3%;
+}
+.botoes button{
+    margin-top: 3%;
+    background-color: rgba(0,0,0,.50);
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: .4s ease all;
+}
+.botoes i{
+    margin-right: 8px;
+}
+.botoes button:hover{
+    background-color: #ffffff;
+    color: black;
+    cursor: pointer;
+}
+.container{
+    margin: 0 20px 0 20px;
+}
+.carousel-titulo h3{
+    margin-top: 14px;
+    font-size: 23px;
+    margin-bottom: 14px;
+}
+.botao-filme{
+    margin-top: 5px;
+}
+.botao-filme button{
+    display: block;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,.50);
+    color: #fff;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 5px;
+    transition: .4s ease all;
+}
+.botao-filme button:hover{
+    background-color: #ffffff;
+    color: black;
+    cursor: pointer;
+}
+footer .creditos{
+    margin-top: 34px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: var(--vermelho);
+    padding: 15px;
+}
+
+/* responsividade */
+@media screen and (max-width: 645px) {
+   header .container{
+    flex-direction: column; 
+    margin-bottom: 5px;
+   }
+   .botoes button{
+    margin-top: 3%;
+   }
+   .filme-destaque .container{
+    width: 80%;
+   }
+}
+
+
