@@ -44,7 +44,7 @@ header nav a:hover{
 .filme-destaque{
     width: 100%;
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://lisboa04.github.io/Projeto-Netflix/img/filme-destaque.png');
+    background-image: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/filme-destaque.png');
     height: 90vh;
     background-size: cover;
     display: flex;
